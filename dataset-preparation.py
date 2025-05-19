@@ -6,9 +6,9 @@ hacc_url = "https://g-8d6b0.fd635.8443.data.globus.org/ds131.2/Data-Reduction-Re
 scale_url = "https://g-8d6b0.fd635.8443.data.globus.org/ds131.2/Data-Reduction-Repo/raw-data/SCALE_LETKF/SDRBENCH-SCALE-98x1200x1200.tar.gz"
 qmcpack_url = "https://g-8d6b0.fd635.8443.data.globus.org/ds131.2/Data-Reduction-Repo/raw-data/QMCPack/SDRBENCH-QMCPack.tar.gz"
 nyx_url = "https://g-8d6b0.fd635.8443.data.globus.org/ds131.2/Data-Reduction-Repo/raw-data/EXASKY/NYX/SDRBENCH-EXASKY-NYX-512x512x512.tar.gz"
-jetin_url = "https://klacansky.com/open-scivis-datasets/jicf_q/jicf_q_1408x1080x1100_float32.raw"
-miranda_url = "https://klacansky.com/open-scivis-datasets/miranda/miranda_1024x1024x1024_float32.raw"
-syntruss_url = "https://klacansky.com/open-scivis-datasets/synthetic_truss_with_five_defects/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw"
+jetin_url = "http://klacansky.com/open-scivis-datasets/jicf_q/jicf_q_1408x1080x1100_float32.raw"
+miranda_url = "http://klacansky.com/open-scivis-datasets/miranda/miranda_1024x1024x1024_float32.raw"
+syntruss_url = "http://klacansky.com/open-scivis-datasets/synthetic_truss_with_five_defects/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw"
 
 os.system("mkdir dataset")
 os.chdir("dataset")
