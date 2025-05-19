@@ -1,5 +1,8 @@
 # SC24-cuSZp2
 
+> [!NOTE]
+> Not my work, but a fork of the [AD/AE codebase](https://zenodo.org/records/13315526) of [cuSZp2](https://dl.acm.org/doi/10.1109/SC41406.2024.00021).
+
 ## 0. Introduction
 cuSZp2 (a.k.a. name as GSZ in paper submission) is a lossy error-bounded compression library specifically for NVIDIA GPUs for compression of floating-point data. This repository is used for AD-AE process for SC'24 conference. The official and final version of cuSZp2 will be updated into cuSZp repository [\[LINK\]](https://github.com/szcompressor/cuSZp) in the future. **For simplicity, we will still use the name GSZ in this repository, to align what is reported in the submission version.**
 
