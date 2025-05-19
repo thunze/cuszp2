@@ -4,3 +4,5 @@ result
 
 # Generated files
 dataset/
+**/build/
+**/install/
