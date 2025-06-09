@@ -1,0 +1,107 @@
++ export CUDA_HOME=/projects/NEC/nvidia/cuda_11.8.0
++ CUDA_HOME=/projects/NEC/nvidia/cuda_11.8.0
++ export LD_LIBRARY_PATH=/projects/NEC/nvidia/cuda_11.8.0/lib64:/projects/NEC/nvidia/cuda_11.8.0/lib64
++ LD_LIBRARY_PATH=/projects/NEC/nvidia/cuda_11.8.0/lib64:/projects/NEC/nvidia/cuda_11.8.0/lib64
++ export OMP_TARGET_OFFLOAD=MANDATORY
++ OMP_TARGET_OFFLOAD=MANDATORY
++ export NVCOMPILER_ACC_NOTIFY=3
++ NVCOMPILER_ACC_NOTIFY=3
++ rundir=/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
++ workdir=/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/double-precision-results
++ pushd /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/double-precision-results
+/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/double-precision-results /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
++ python3 ./2-execution.py 1E-2
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31mnwchem[0m under [31m1E-2[0m
+GSZ-P   compression throughput: 1008.931853 GB/s
+GSZ-P decompression throughput: 3229.516967 GB/s
+GSZ-P    max compression ratio: 82.506696
+GSZ-P    min compression ratio: 82.506696
+GSZ-P    avg compression ratio: 82.506696
+
+GSZ-O   compression throughput: 996.857305 GB/s
+GSZ-O decompression throughput: 3208.4135 GB/s
+GSZ-O    max compression ratio: 82.51842
+GSZ-O    min compression ratio: 82.51842
+GSZ-O    avg compression ratio: 82.51842
+====================================================================
+
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31ms3d[0m under [31m1E-2[0m
+GSZ-P   compression throughput: 1050.0919646 GB/s
+GSZ-P decompression throughput: 2204.2552905999996 GB/s
+GSZ-P    max compression ratio: 44.289605
+GSZ-P    min compression ratio: 44.273392
+GSZ-P    avg compression ratio: 44.2824034
+
+GSZ-O   compression throughput: 1074.0721078000001 GB/s
+GSZ-O decompression throughput: 2352.3745148000003 GB/s
+GSZ-O    max compression ratio: 90.287397
+GSZ-O    min compression ratio: 89.566029
+GSZ-O    avg compression ratio: 89.8573926
+====================================================================
+
++ python3 ./2-execution.py 1E-3
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31mnwchem[0m under [31m1E-3[0m
+GSZ-P   compression throughput: 935.87836 GB/s
+GSZ-P decompression throughput: 1704.857253 GB/s
+GSZ-P    max compression ratio: 26.854031
+GSZ-P    min compression ratio: 26.854031
+GSZ-P    avg compression ratio: 26.854031
+
+GSZ-O   compression throughput: 922.195626 GB/s
+GSZ-O decompression throughput: 1740.131715 GB/s
+GSZ-O    max compression ratio: 26.865836
+GSZ-O    min compression ratio: 26.865836
+GSZ-O    avg compression ratio: 26.865836
+====================================================================
+
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31ms3d[0m under [31m1E-3[0m
+GSZ-P   compression throughput: 972.7936502 GB/s
+GSZ-P decompression throughput: 1645.8958751999999 GB/s
+GSZ-P    max compression ratio: 21.720185
+GSZ-P    min compression ratio: 21.702849
+GSZ-P    avg compression ratio: 21.7153966
+
+GSZ-O   compression throughput: 980.7505907999999 GB/s
+GSZ-O decompression throughput: 1836.5170188 GB/s
+GSZ-O    max compression ratio: 56.729816
+GSZ-O    min compression ratio: 56.291728
+GSZ-O    avg compression ratio: 56.505843600000006
+====================================================================
+
++ python3 ./2-execution.py 1E-4
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31mnwchem[0m under [31m1E-4[0m
+GSZ-P   compression throughput: 888.184 GB/s
+GSZ-P decompression throughput: 1239.563245 GB/s
+GSZ-P    max compression ratio: 13.730661
+GSZ-P    min compression ratio: 13.730661
+GSZ-P    avg compression ratio: 13.730661
+
+GSZ-O   compression throughput: 875.441671 GB/s
+GSZ-O decompression throughput: 1242.999753 GB/s
+GSZ-O    max compression ratio: 13.737679
+GSZ-O    min compression ratio: 13.737679
+GSZ-O    avg compression ratio: 13.737679
+====================================================================
+
+====================================================================
+Done with Execution GSZ-P and GSZ-O on [31ms3d[0m under [31m1E-4[0m
+GSZ-P   compression throughput: 897.7139016000001 GB/s
+GSZ-P decompression throughput: 1347.3422908 GB/s
+GSZ-P    max compression ratio: 12.650703
+GSZ-P    min compression ratio: 12.62294
+GSZ-P    avg compression ratio: 12.641089999999998
+
+GSZ-O   compression throughput: 872.9813678 GB/s
+GSZ-O decompression throughput: 1438.7247088 GB/s
+GSZ-O    max compression ratio: 37.623367
+GSZ-O    min compression ratio: 37.396795
+GSZ-O    avg compression ratio: 37.4837532
+====================================================================
+
++ popd
+/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
