@@ -1,5 +1,8 @@
 # cusZP2 Reproduction on RAMSES
 
+- Original hardware used: NVIDIA A100
+- RAMSES hardware used: NVIDIA H100, NVIDIA A30
+
 ## Prepare working directory
 
 - Create working directory, using `/scratch` because it has a quota of 40 TB instead of 100 GB
@@ -37,7 +40,7 @@ cd ..
 
 ## Compilation
 
-- Add Hopper architecture (compute capability `9.0`, i.e., code `90`) to target architectures to generate device code for by editing `./main-results/CMakeLists.txt` and `./double-precision-results/CMakeLists.txt`, and in each of these files, replacing `set(CMAKE_CUDA_ARCHITECTURES 60 61 62 70 75)` with `set(CMAKE_CUDA_ARCHITECTURES 60 61 62 70 75 90)`
+- Add the Ampere and Hopper architectures (compute capabilities `8.0` and `9.0`, i.e., codes `80` and `90`) to the target architectures to generate device code for by editing `./main-results/CMakeLists.txt` and `./double-precision-results/CMakeLists.txt`, and in each of these files, replacing `set(CMAKE_CUDA_ARCHITECTURES 60 61 62 70 75)` with `set(CMAKE_CUDA_ARCHITECTURES 60 61 62 70 75 80 90)`
   - [CUDA GPU Compute Capability Reference](https://developer.nvidia.com/cuda-gpus)
 - Prepare environment variables for CUDA compilation
 
