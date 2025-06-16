@@ -1,14 +1,26 @@
++ export CUDA_HOME=/projects/NEC/nvidia/cuda_11.8.0
++ CUDA_HOME=/projects/NEC/nvidia/cuda_11.8.0
++ export LD_LIBRARY_PATH=/projects/NEC/nvidia/cuda_11.8.0/lib64
++ LD_LIBRARY_PATH=/projects/NEC/nvidia/cuda_11.8.0/lib64
++ export OMP_TARGET_OFFLOAD=MANDATORY
++ OMP_TARGET_OFFLOAD=MANDATORY
++ export NVCOMPILER_ACC_NOTIFY=3
++ NVCOMPILER_ACC_NOTIFY=3
++ rundir=/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
++ workdir=/scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/main-results
++ pushd /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/main-results
 /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693/main-results /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
++ python3 ./1-execution.py 1E-2
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mcesm_atm[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 223.182981030303 GB/s
-GSZ-P decompression throughput: 467.84623190909093 GB/s
+GSZ-P   compression throughput: 218.39193093939392 GB/s
+GSZ-P decompression throughput: 463.14762512121206 GB/s
 GSZ-P    max compression ratio: 69.473223
 GSZ-P    min compression ratio: 3.879219
 GSZ-P    avg compression ratio: 32.564825484848484
 
-GSZ-O   compression throughput: 224.6417844848485 GB/s
-GSZ-O decompression throughput: 490.8716875757576 GB/s
+GSZ-O   compression throughput: 223.54537742424247 GB/s
+GSZ-O decompression throughput: 483.69856987878796 GB/s
 GSZ-O    max compression ratio: 82.412301
 GSZ-O    min compression ratio: 18.443434
 GSZ-O    avg compression ratio: 42.980643030303035
@@ -16,14 +28,14 @@ GSZ-O    avg compression ratio: 42.980643030303035
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mhacc[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 198.50479266666665 GB/s
-GSZ-P decompression throughput: 210.14300750000004 GB/s
+GSZ-P   compression throughput: 198.50785516666667 GB/s
+GSZ-P decompression throughput: 209.81692433333333 GB/s
 GSZ-P    max compression ratio: 10.601229
 GSZ-P    min compression ratio: 5.277195
 GSZ-P    avg compression ratio: 7.918538000000001
 
-GSZ-O   compression throughput: 214.419038 GB/s
-GSZ-O decompression throughput: 220.03155016666668 GB/s
+GSZ-O   compression throughput: 215.118934 GB/s
+GSZ-O decompression throughput: 220.52413833333335 GB/s
 GSZ-O    max compression ratio: 20.094569
 GSZ-O    min compression ratio: 11.490343
 GSZ-O    avg compression ratio: 15.500870999999998
@@ -31,14 +43,14 @@ GSZ-O    avg compression ratio: 15.500870999999998
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mscale[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 209.46145650000005 GB/s
-GSZ-P decompression throughput: 448.57604066666664 GB/s
+GSZ-P   compression throughput: 201.3009544166667 GB/s
+GSZ-P decompression throughput: 409.0369015833333 GB/s
 GSZ-P    max compression ratio: 105.886166
 GSZ-P    min compression ratio: 3.879338
 GSZ-P    avg compression ratio: 37.76016499999999
 
-GSZ-O   compression throughput: 211.70264216666666 GB/s
-GSZ-O decompression throughput: 451.08595633333334 GB/s
+GSZ-O   compression throughput: 210.15662258333336 GB/s
+GSZ-O decompression throughput: 444.1100178333333 GB/s
 GSZ-O    max compression ratio: 109.552353
 GSZ-O    min compression ratio: 16.804846
 GSZ-O    avg compression ratio: 46.19015458333333
@@ -46,14 +58,14 @@ GSZ-O    avg compression ratio: 46.19015458333333
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mqmcpack[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 221.935411 GB/s
-GSZ-P decompression throughput: 300.21453099999997 GB/s
+GSZ-P   compression throughput: 221.817791 GB/s
+GSZ-P decompression throughput: 296.208698 GB/s
 GSZ-P    max compression ratio: 22.215013
 GSZ-P    min compression ratio: 12.443785
 GSZ-P    avg compression ratio: 17.329399
 
-GSZ-O   compression throughput: 202.9608745 GB/s
-GSZ-O decompression throughput: 264.980504 GB/s
+GSZ-O   compression throughput: 210.1874435 GB/s
+GSZ-O decompression throughput: 274.6217965 GB/s
 GSZ-O    max compression ratio: 23.579919
 GSZ-O    min compression ratio: 12.446246
 GSZ-O    avg compression ratio: 18.0130825
@@ -61,14 +73,14 @@ GSZ-O    avg compression ratio: 18.0130825
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mnyx[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 213.1853386666667 GB/s
-GSZ-P decompression throughput: 591.6284318333334 GB/s
+GSZ-P   compression throughput: 199.51206949999997 GB/s
+GSZ-P decompression throughput: 554.3002433333334 GB/s
 GSZ-P    max compression ratio: 127.804011
 GSZ-P    min compression ratio: 9.604976
 GSZ-P    avg compression ratio: 66.73279633333334
 
-GSZ-O   compression throughput: 196.63213816666666 GB/s
-GSZ-O decompression throughput: 556.5196418333334 GB/s
+GSZ-O   compression throughput: 224.32749233333334 GB/s
+GSZ-O decompression throughput: 623.0326388333334 GB/s
 GSZ-O    max compression ratio: 127.804011
 GSZ-O    min compression ratio: 14.365453
 GSZ-O    avg compression ratio: 69.14005966666666
@@ -76,14 +88,14 @@ GSZ-O    avg compression ratio: 69.14005966666666
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mjetin[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 245.565153 GB/s
-GSZ-P decompression throughput: 2116.904865 GB/s
+GSZ-P   compression throughput: 244.715897 GB/s
+GSZ-P decompression throughput: 2013.794011 GB/s
 GSZ-P    max compression ratio: 126.269448
 GSZ-P    min compression ratio: 126.269448
 GSZ-P    avg compression ratio: 126.269448
 
-GSZ-O   compression throughput: 243.633529 GB/s
-GSZ-O decompression throughput: 2000.580516 GB/s
+GSZ-O   compression throughput: 243.985577 GB/s
+GSZ-O decompression throughput: 1984.572057 GB/s
 GSZ-O    max compression ratio: 126.284252
 GSZ-O    min compression ratio: 126.284252
 GSZ-O    avg compression ratio: 126.284252
@@ -91,14 +103,14 @@ GSZ-O    avg compression ratio: 126.284252
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mmiranda[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 159.984407 GB/s
-GSZ-P decompression throughput: 197.324095 GB/s
+GSZ-P   compression throughput: 160.11649 GB/s
+GSZ-P decompression throughput: 181.212508 GB/s
 GSZ-P    max compression ratio: 4.456414
 GSZ-P    min compression ratio: 4.456414
 GSZ-P    avg compression ratio: 4.456414
 
-GSZ-O   compression throughput: 178.418103 GB/s
-GSZ-O decompression throughput: 199.951569 GB/s
+GSZ-O   compression throughput: 177.844229 GB/s
+GSZ-O decompression throughput: 199.989686 GB/s
 GSZ-O    max compression ratio: 11.109375
 GSZ-O    min compression ratio: 11.109375
 GSZ-O    avg compression ratio: 11.109375
@@ -106,29 +118,30 @@ GSZ-O    avg compression ratio: 11.109375
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31msyntruss[0m under [31m1E-2[0m
-GSZ-P   compression throughput: 221.762997 GB/s
-GSZ-P decompression throughput: 316.299211 GB/s
+GSZ-P   compression throughput: 223.265708 GB/s
+GSZ-P decompression throughput: 318.493027 GB/s
 GSZ-P    max compression ratio: 12.669035
 GSZ-P    min compression ratio: 12.669035
 GSZ-P    avg compression ratio: 12.669035
 
-GSZ-O   compression throughput: 206.89218 GB/s
-GSZ-O decompression throughput: 265.474204 GB/s
+GSZ-O   compression throughput: 209.649952 GB/s
+GSZ-O decompression throughput: 309.683857 GB/s
 GSZ-O    max compression ratio: 12.966094
 GSZ-O    min compression ratio: 12.966094
 GSZ-O    avg compression ratio: 12.966094
 ====================================================================
 
++ python3 ./1-execution.py 1E-3
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mcesm_atm[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 207.4573960606061 GB/s
-GSZ-P decompression throughput: 321.7000676666667 GB/s
+GSZ-P   compression throughput: 197.50726415151516 GB/s
+GSZ-P decompression throughput: 308.2555106666668 GB/s
 GSZ-P    max compression ratio: 39.039537
 GSZ-P    min compression ratio: 2.776141
 GSZ-P    avg compression ratio: 14.53542281818182
 
-GSZ-O   compression throughput: 208.2583793939394 GB/s
-GSZ-O decompression throughput: 316.54455503030306 GB/s
+GSZ-O   compression throughput: 204.03075287878792 GB/s
+GSZ-O decompression throughput: 312.1511466666667 GB/s
 GSZ-O    max compression ratio: 57.453092
 GSZ-O    min compression ratio: 12.995819
 GSZ-O    avg compression ratio: 24.53496509090909
@@ -136,14 +149,14 @@ GSZ-O    avg compression ratio: 24.53496509090909
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mhacc[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 157.16911833333333 GB/s
-GSZ-P decompression throughput: 195.14217599999998 GB/s
+GSZ-P   compression throughput: 157.11891183333336 GB/s
+GSZ-P decompression throughput: 194.93137133333335 GB/s
 GSZ-P    max compression ratio: 5.365436
 GSZ-P    min compression ratio: 3.451861
 GSZ-P    avg compression ratio: 4.405594000000001
 
-GSZ-O   compression throughput: 171.4331855 GB/s
-GSZ-O decompression throughput: 201.643626 GB/s
+GSZ-O   compression throughput: 172.30625883333335 GB/s
+GSZ-O decompression throughput: 202.41418016666663 GB/s
 GSZ-O    max compression ratio: 12.470066
 GSZ-O    min compression ratio: 5.851711
 GSZ-O    avg compression ratio: 8.823446833333334
@@ -151,14 +164,14 @@ GSZ-O    avg compression ratio: 8.823446833333334
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mscale[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 194.03015308333332 GB/s
-GSZ-P decompression throughput: 376.7157514166666 GB/s
+GSZ-P   compression throughput: 185.57062325 GB/s
+GSZ-P decompression throughput: 357.5979005 GB/s
 GSZ-P    max compression ratio: 72.598979
 GSZ-P    min compression ratio: 2.750328
 GSZ-P    avg compression ratio: 21.11330458333333
 
-GSZ-O   compression throughput: 196.84948825 GB/s
-GSZ-O decompression throughput: 331.8016618333334 GB/s
+GSZ-O   compression throughput: 200.21454041666667 GB/s
+GSZ-O decompression throughput: 322.2408213333333 GB/s
 GSZ-O    max compression ratio: 79.695224
 GSZ-O    min compression ratio: 11.102816
 GSZ-O    avg compression ratio: 29.52363491666667
@@ -166,14 +179,14 @@ GSZ-O    avg compression ratio: 29.52363491666667
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mqmcpack[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 204.0580685 GB/s
-GSZ-P decompression throughput: 206.283011 GB/s
+GSZ-P   compression throughput: 200.445466 GB/s
+GSZ-P decompression throughput: 211.3050855 GB/s
 GSZ-P    max compression ratio: 10.075567
 GSZ-P    min compression ratio: 6.076028
 GSZ-P    avg compression ratio: 8.0757975
 
-GSZ-O   compression throughput: 181.3794825 GB/s
-GSZ-O decompression throughput: 203.26416749999999 GB/s
+GSZ-O   compression throughput: 185.95628399999998 GB/s
+GSZ-O decompression throughput: 207.614364 GB/s
 GSZ-O    max compression ratio: 13.296692
 GSZ-O    min compression ratio: 6.077027
 GSZ-O    avg compression ratio: 9.6868595
@@ -181,14 +194,14 @@ GSZ-O    avg compression ratio: 9.6868595
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mnyx[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 197.67614166666667 GB/s
-GSZ-P decompression throughput: 363.938271 GB/s
+GSZ-P   compression throughput: 167.1149375 GB/s
+GSZ-P decompression throughput: 338.87022199999996 GB/s
 GSZ-P    max compression ratio: 125.551299
 GSZ-P    min compression ratio: 5.090097
 GSZ-P    avg compression ratio: 38.44212666666666
 
-GSZ-O   compression throughput: 180.76312799999997 GB/s
-GSZ-O decompression throughput: 390.17987249999993 GB/s
+GSZ-O   compression throughput: 168.375059 GB/s
+GSZ-O decompression throughput: 357.73617616666667 GB/s
 GSZ-O    max compression ratio: 125.560284
 GSZ-O    min compression ratio: 10.501972
 GSZ-O    avg compression ratio: 41.756694333333336
@@ -196,14 +209,14 @@ GSZ-O    avg compression ratio: 41.756694333333336
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mjetin[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 246.044517 GB/s
-GSZ-P decompression throughput: 2016.217117 GB/s
+GSZ-P   compression throughput: 246.224684 GB/s
+GSZ-P decompression throughput: 2014.160167 GB/s
 GSZ-P    max compression ratio: 119.858277
 GSZ-P    min compression ratio: 119.858277
 GSZ-P    avg compression ratio: 119.858277
 
-GSZ-O   compression throughput: 244.147505 GB/s
-GSZ-O decompression throughput: 1904.670485 GB/s
+GSZ-O   compression throughput: 243.710345 GB/s
+GSZ-O decompression throughput: 1819.144198 GB/s
 GSZ-O    max compression ratio: 120.064674
 GSZ-O    min compression ratio: 120.064674
 GSZ-O    avg compression ratio: 120.064674
@@ -211,14 +224,14 @@ GSZ-O    avg compression ratio: 120.064674
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mmiranda[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 125.639488 GB/s
-GSZ-P decompression throughput: 185.206086 GB/s
+GSZ-P   compression throughput: 125.631844 GB/s
+GSZ-P decompression throughput: 185.437902 GB/s
 GSZ-P    max compression ratio: 3.038741
 GSZ-P    min compression ratio: 3.038741
 GSZ-P    avg compression ratio: 3.038741
 
-GSZ-O   compression throughput: 144.026876 GB/s
-GSZ-O decompression throughput: 189.284157 GB/s
+GSZ-O   compression throughput: 143.852713 GB/s
+GSZ-O decompression throughput: 188.946909 GB/s
 GSZ-O    max compression ratio: 5.981446
 GSZ-O    min compression ratio: 5.981446
 GSZ-O    avg compression ratio: 5.981446
@@ -226,29 +239,30 @@ GSZ-O    avg compression ratio: 5.981446
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31msyntruss[0m under [31m1E-3[0m
-GSZ-P   compression throughput: 184.047962 GB/s
-GSZ-P decompression throughput: 259.415308 GB/s
+GSZ-P   compression throughput: 184.814633 GB/s
+GSZ-P decompression throughput: 259.251085 GB/s
 GSZ-P    max compression ratio: 6.371377
 GSZ-P    min compression ratio: 6.371377
 GSZ-P    avg compression ratio: 6.371377
 
-GSZ-O   compression throughput: 166.807282 GB/s
-GSZ-O decompression throughput: 232.406411 GB/s
+GSZ-O   compression throughput: 168.400717 GB/s
+GSZ-O decompression throughput: 234.549063 GB/s
 GSZ-O    max compression ratio: 6.470316
 GSZ-O    min compression ratio: 6.470316
 GSZ-O    avg compression ratio: 6.470316
 ====================================================================
 
++ python3 ./1-execution.py 1E-4
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mcesm_atm[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 171.21678509090907 GB/s
-GSZ-P decompression throughput: 259.79419284848484 GB/s
+GSZ-P   compression throughput: 173.55763900000002 GB/s
+GSZ-P decompression throughput: 260.9540884545454 GB/s
 GSZ-P    max compression ratio: 24.56343
 GSZ-P    min compression ratio: 2.109758
 GSZ-P    avg compression ratio: 8.258418303030304
 
-GSZ-O   compression throughput: 180.7778454242424 GB/s
-GSZ-O decompression throughput: 239.18703687878786 GB/s
+GSZ-O   compression throughput: 177.80486745454547 GB/s
+GSZ-O decompression throughput: 236.65157575757576 GB/s
 GSZ-O    max compression ratio: 39.013494
 GSZ-O    min compression ratio: 7.854661
 GSZ-O    avg compression ratio: 14.976532969696969
@@ -256,14 +270,14 @@ GSZ-O    avg compression ratio: 14.976532969696969
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mhacc[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 123.44032533333332 GB/s
-GSZ-P decompression throughput: 183.8671735 GB/s
+GSZ-P   compression throughput: 123.13829549999998 GB/s
+GSZ-P decompression throughput: 183.02277766666666 GB/s
 GSZ-P    max compression ratio: 3.465458
 GSZ-P    min compression ratio: 2.530787
 GSZ-P    avg compression ratio: 2.9966536666666665
 
-GSZ-O   compression throughput: 132.3086645 GB/s
-GSZ-O decompression throughput: 174.0707315 GB/s
+GSZ-O   compression throughput: 132.33018966666666 GB/s
+GSZ-O decompression throughput: 170.45024966666668 GB/s
 GSZ-O    max compression ratio: 6.277678
 GSZ-O    min compression ratio: 3.674765
 GSZ-O    avg compression ratio: 4.8438735
@@ -271,14 +285,14 @@ GSZ-O    avg compression ratio: 4.8438735
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mscale[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 167.69316283333333 GB/s
-GSZ-P decompression throughput: 309.5683996666666 GB/s
+GSZ-P   compression throughput: 163.11466491666667 GB/s
+GSZ-P decompression throughput: 301.6645520833334 GB/s
 GSZ-P    max compression ratio: 42.06065
 GSZ-P    min compression ratio: 2.144647
 GSZ-P    avg compression ratio: 12.338730833333331
 
-GSZ-O   compression throughput: 173.88914991666664 GB/s
-GSZ-O decompression throughput: 241.83702100000002 GB/s
+GSZ-O   compression throughput: 172.659859 GB/s
+GSZ-O decompression throughput: 237.9878679166667 GB/s
 GSZ-O    max compression ratio: 49.945889
 GSZ-O    min compression ratio: 6.309605
 GSZ-O    avg compression ratio: 17.920991750000002
@@ -286,14 +300,14 @@ GSZ-O    avg compression ratio: 17.920991750000002
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mqmcpack[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 153.3040005 GB/s
-GSZ-P decompression throughput: 182.952453 GB/s
+GSZ-P   compression throughput: 159.1104085 GB/s
+GSZ-P decompression throughput: 188.4601795 GB/s
 GSZ-P    max compression ratio: 5.561212
 GSZ-P    min compression ratio: 3.789493
 GSZ-P    avg compression ratio: 4.6753525
 
-GSZ-O   compression throughput: 139.76173749999998 GB/s
-GSZ-O decompression throughput: 171.35929900000002 GB/s
+GSZ-O   compression throughput: 142.1194805 GB/s
+GSZ-O decompression throughput: 175.530273 GB/s
 GSZ-O    max compression ratio: 7.247512
 GSZ-O    min compression ratio: 3.789785
 GSZ-O    avg compression ratio: 5.5186485
@@ -301,14 +315,14 @@ GSZ-O    avg compression ratio: 5.5186485
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mnyx[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 171.94753616666665 GB/s
-GSZ-P decompression throughput: 316.802216 GB/s
+GSZ-P   compression throughput: 154.62453200000002 GB/s
+GSZ-P decompression throughput: 267.4898965 GB/s
 GSZ-P    max compression ratio: 98.226901
 GSZ-P    min compression ratio: 3.351214
 GSZ-P    avg compression ratio: 22.13801633333333
 
-GSZ-O   compression throughput: 169.49172716666666 GB/s
-GSZ-O decompression throughput: 302.81358933333337 GB/s
+GSZ-O   compression throughput: 143.14457549999997 GB/s
+GSZ-O decompression throughput: 260.564403 GB/s
 GSZ-O    max compression ratio: 98.373211
 GSZ-O    min compression ratio: 5.433039
 GSZ-O    avg compression ratio: 24.122042500000003
@@ -316,14 +330,14 @@ GSZ-O    avg compression ratio: 24.122042500000003
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mjetin[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 245.781883 GB/s
-GSZ-P decompression throughput: 1839.025463 GB/s
+GSZ-P   compression throughput: 245.917369 GB/s
+GSZ-P decompression throughput: 1835.318621 GB/s
 GSZ-P    max compression ratio: 105.585375
 GSZ-P    min compression ratio: 105.585375
 GSZ-P    avg compression ratio: 105.585375
 
-GSZ-O   compression throughput: 244.935631 GB/s
-GSZ-O decompression throughput: 1679.300818 GB/s
+GSZ-O   compression throughput: 244.624028 GB/s
+GSZ-O decompression throughput: 1667.992651 GB/s
 GSZ-O    max compression ratio: 106.499014
 GSZ-O    min compression ratio: 106.499014
 GSZ-O    avg compression ratio: 106.499014
@@ -331,14 +345,14 @@ GSZ-O    avg compression ratio: 106.499014
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31mmiranda[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 104.556459 GB/s
-GSZ-P decompression throughput: 173.364212 GB/s
+GSZ-P   compression throughput: 104.508649 GB/s
+GSZ-P decompression throughput: 173.379707 GB/s
 GSZ-P    max compression ratio: 2.323958
 GSZ-P    min compression ratio: 2.323958
 GSZ-P    avg compression ratio: 2.323958
 
-GSZ-O   compression throughput: 115.8499 GB/s
-GSZ-O decompression throughput: 173.969779 GB/s
+GSZ-O   compression throughput: 115.821171 GB/s
+GSZ-O decompression throughput: 173.767365 GB/s
 GSZ-O    max compression ratio: 3.80279
 GSZ-O    min compression ratio: 3.80279
 GSZ-O    avg compression ratio: 3.80279
@@ -346,17 +360,18 @@ GSZ-O    avg compression ratio: 3.80279
 
 ====================================================================
 Done with Execution GSZ-P and GSZ-O on [31msyntruss[0m under [31m1E-4[0m
-GSZ-P   compression throughput: 147.41357 GB/s
-GSZ-P decompression throughput: 247.448137 GB/s
+GSZ-P   compression throughput: 148.206686 GB/s
+GSZ-P decompression throughput: 247.163113 GB/s
 GSZ-P    max compression ratio: 4.21069
 GSZ-P    min compression ratio: 4.21069
 GSZ-P    avg compression ratio: 4.21069
 
-GSZ-O   compression throughput: 132.94442 GB/s
-GSZ-O decompression throughput: 211.384382 GB/s
+GSZ-O   compression throughput: 133.049945 GB/s
+GSZ-O decompression throughput: 211.221161 GB/s
 GSZ-O    max compression ratio: 4.246762
 GSZ-O    min compression ratio: 4.246762
 GSZ-O    avg compression ratio: 4.246762
 ====================================================================
 
++ popd
 /scratch/ppdml003/hyfshishen-SC24-cuSZp2-85ce693
