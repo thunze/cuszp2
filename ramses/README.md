@@ -108,11 +108,27 @@ python3 ./1-execution.py 1E-4
 popd
 ```
 
+#### NVIDIA H100 GPU
+
 - Submit the **main results** execution job to Slurm and watch the queue
 
 ```sh
 sbatch ./main-results.sh
 watch squeue --user $USER
+```
+
+- Find the job output in `slurm-<JOBID>.out` in the directory the job was started from
+
+#### NVIDIA A30 GPU
+
+- NVIDIA A30 GPUs on RAMSES are only available in the `interactive` partition, which means that they cannot be used for batch jobs. Instead, you can run the job interactively using the following commands:
+
+```sh
+salloc -p interactive -G a30:1 --mem 128gb --time=0:30:00
+srun --pty bash -l
+./main-results.sh 2>&1 | tee slurm-${SLURM_JOB_ID}.out
+exit
+scancel $SLURM_JOB_ID
 ```
 
 - Find the job output in `slurm-<JOBID>.out` in the directory the job was started from
@@ -155,11 +171,27 @@ python3 ./2-execution.py 1E-4
 popd
 ```
 
+#### NVIDIA H100 GPU
+
 - Submit the **double-precision results** execution job to Slurm and watch the queue
 
 ```sh
 sbatch ./double-precision-results.sh
 watch squeue --user $USER
+```
+
+- Find the job output in `slurm-<JOBID>.out` in the directory the job was started from
+
+#### NVIDIA A30 GPU
+
+- NVIDIA A30 GPUs on RAMSES are only available in the `interactive` partition, which means that they cannot be used for batch jobs. Instead, you can run the job interactively using the following commands:
+
+```sh
+salloc -p interactive -G a30:1 --mem 128gb --time=0:30:00
+srun --pty bash -l
+./double-precision-results.sh 2>&1 | tee slurm-${SLURM_JOB_ID}.out
+exit
+scancel $SLURM_JOB_ID
 ```
 
 - Find the job output in `slurm-<JOBID>.out` in the directory the job was started from
