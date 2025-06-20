@@ -1,0 +1,46 @@
+--- a/main-results/examples/gsz_p.cpp
++++ b/main-results/examples/gsz_p.cpp
+@@ -7,6 +7,16 @@
+ #include <GSZ_entry.h>
+ #include <GSZ_timer.h>
+ 
++#define CUDA_SAFE_CALL(call)                                                       \
++do {                                                                               \
++    cudaError_t err = call;                                                        \
++    if (err != cudaSuccess) {                                                      \
++        fprintf(stderr, "CUDA error at %s:%d: %s\n", __FILE__, __LINE__,           \
++                cudaGetErrorString(err));                                          \
++        exit(EXIT_FAILURE);                                                        \
++    }                                                                              \
++} while (0)
++
+ int main(int argc, char* argv[])
+ {
+     // Read input information.
+@@ -52,10 +62,22 @@ int main(int argc, char* argv[])
+     float* d_decData;
+     unsigned char* d_cmpBytes;
+     size_t pad_nbEle = (nbEle + 32768 - 1) / 32768 * 32768; // A temp demo, will add more block sizes in future implementation.
+-    cudaMalloc((void**)&d_oriData, sizeof(float)*pad_nbEle);
+-    cudaMemcpy(d_oriData, oriData, sizeof(float)*pad_nbEle, cudaMemcpyHostToDevice);
+-    cudaMalloc((void**)&d_decData, sizeof(float)*pad_nbEle);
+-    cudaMalloc((void**)&d_cmpBytes, sizeof(float)*pad_nbEle);
++    size_t free_mem, total_mem;
++    cudaMemGetInfo(&free_mem, &total_mem);
++    printf("[INFO] Free memory: %.2f MB / %.2f MB total\n", free_mem / 1e6, total_mem / 1e6);
++    printf("[INFO] Allocating %.2f MB for d_oriData\n", sizeof(float) * pad_nbEle / 1e6);
++    CUDA_SAFE_CALL(cudaMalloc((void**)&d_oriData, sizeof(double)*pad_nbEle));
++    cudaMemGetInfo(&free_mem, &total_mem);
++    printf("[INFO] Free memory: %.2f MB / %.2f MB total\n", free_mem / 1e6, total_mem / 1e6);
++    printf("[INFO] Allocating %.2f MB for d_decData\n", sizeof(float) * pad_nbEle / 1e6);
++    CUDA_SAFE_CALL(cudaMemcpy(d_oriData, oriData, sizeof(float)*pad_nbEle, cudaMemcpyHostToDevice));
++    CUDA_SAFE_CALL(cudaMalloc((void**)&d_decData, sizeof(float)*pad_nbEle));
++    cudaMemGetInfo(&free_mem, &total_mem);
++    printf("[INFO] Free memory: %.2f MB / %.2f MB total\n", free_mem / 1e6, total_mem / 1e6);
++    printf("[INFO] Allocating %.2f MB for d_cmpBytes\n", sizeof(float) * pad_nbEle / 1e6);
++    CUDA_SAFE_CALL(cudaMalloc((void**)&d_cmpBytes, sizeof(float)*pad_nbEle));
++    cudaMemGetInfo(&free_mem, &total_mem);
++    printf("[INFO] Free memory: %.2f MB / %.2f MB total\n", free_mem / 1e6, total_mem / 1e6);
+ 
+     // Initializing CUDA Stream.
+     cudaStream_t stream;
